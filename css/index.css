@@ -38,6 +38,17 @@
   color: #7533f9;
 }
 
+/* Carrousel */
+.carousel {
+  width: 100vw;
+  height: 75vh;
+}
+
+.imagen-carousel {
+  width: 100vw;
+  height: 75vh;
+}
+
 /* Medias Querys */
 
 /* Navbar */
@@ -74,5 +85,33 @@
   .dropdown-item:active {
     background-color: white;
     color: #7533f9;
+  }
+}
+
+/* Carousel */
+
+@media (max-width: 669px) and (min-width: 550px) {
+  .carousel {
+    height: 55vh;
+  }
+
+  .imagen-carousel {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 670px) {
+  .carousel {
+    height: 65vh;
+  }
+
+  .imagen-carousel {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 549px) {
+  .carousel {
+    display: none;
   }
 }
