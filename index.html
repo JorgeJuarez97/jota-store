@@ -14,6 +14,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- Css -->
     <link rel="stylesheet" href="./css/index.css" />
     <!-- Titulo -->
@@ -26,6 +31,274 @@
     />
   </head>
   <body>
+    <!-- Comienza Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/Logo pagina.jpg" alt="Logo Jota Store" width="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cocinas</a></li>
+                  <li><a class="dropdown-item" href="#">Heladeras</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Lavarropas</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Microondas</a></li>
+                  <li><a class="dropdown-item" href="#">Planchas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Pavas Electricas</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">Buscar</button>
+            </form>
+            <ul class="navbar-nav ms-auto mt-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Iniciar Sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Termina Navbar -->
+    <!-- Comienza Main -->
+    <main>
+      <!-- Comienza Carrousel -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://marketplace.canva.com/EAGJrZJF_8k/2/0/1600w/canva-banner-ofertas-en-electrodom%C3%A9sticos-para-cocina-degradado-azul-N_jCLQyixng.jpg"
+              class="d-block imagen-carousel"
+              alt="imagen 50% off"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://selexhogar.com.ar/wp-content/uploads/2024/06/BANNER-COPA-AMERICA3.jpg"
+              class="d-block imagen-carousel"
+              alt="imagen publicidad copa america"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://electrojaponesa.vteximg.com.br/arquivos/ids/203995/Banner%20combo%20SAMSUNG-02.png?v=638551800934870000"
+              class="d-block imagen-carousel"
+              alt="imagen super precio combo"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Termina Carrousel -->
+      <!-- Comienza Seccion Productos -->
+      <div class="container-fluid contenedor-productos">
+        <div class="container">
+          <h2 class="titulo-productos">Fijate lo nuevo</h2>
+        </div>
+        <div class="container contenedor-grid">
+          <div class="row contenedor-padre-card">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4 contenedor-card">
+              <div class="card">
+                <img
+                  src="https://images.fravega.com/f300/c3cd04fe9a57248e4e02147c3a578911.jpg.webp"
+                  class="card-img-top"
+                  alt="Heladera Drean"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Heladera con Freezer Drean Hdr280f00b Blanca Clase A
+                  </h5>
+                  <p class="card-text">$699.099</p>
+                  <a href="#" class="btn boton-agregar-carrito"
+                    >Agregar a carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4 contenedor-card">
+              <div class="card">
+                <img
+                  src="https://images.fravega.com/f300/9e439ed9953d2477cf1f653e51ae0086.jpg.webp"
+                  class="card-img-top"
+                  alt="Heladera Gafa"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Heladera Con Freezer Gafa HGF378AFB Blanca 326lts
+                  </h5>
+                  <p class="card-text">$698.579</p>
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4 contenedor-card">
+              <div class="card">
+                <img
+                  src="https://images.fravega.com/f300/71910592dff68544fc1ac9c329c80090.jpg.webp"
+                  class="card-img-top"
+                  alt="Cocina Escorial"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Cocina Escorial Candor S2 Gas Natural 51 Cm
+                  </h5>
+                  <p class="card-text">$249.999</p>
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4 contenedor-card">
+              <div class="card">
+                <img
+                  src="https://images.fravega.com/f300/f1d233492424074028d9eb680e7406d3.jpg.webp"
+                  class="card-img-top"
+                  alt="Cocina Escorial Master"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Cocina Escorial Master MASCL56BN Gas Natural 56CM Blanco
+                  </h5>
+                  <p class="card-text">$309.999</p>
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4 contenedor-card">
+              <div class="card">
+                <img
+                  src="https://images.fravega.com/f300/b9f68413b7fff246b77f539bcca45eed.jpg.webp"
+                  class="card-img-top"
+                  alt="Plancha a Vapor Kanji"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Plancha a Vapor Kanji Home KJH-PL2201 2200W
+                  </h5>
+                  <p class="card-text">$26.999</p>
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4 contenedor-card">
+              <div class="card">
+                <img
+                  src="https://images.fravega.com/f300/6f6c99f016862e8d607e240c3fc2839f.jpg.webp"
+                  class="card-img-top"
+                  alt="Plancha Seca ATMA"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Plancha Seca ATMA PAS2432PI</h5>
+                  <p class="card-text">$36.999</p>
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Termina Seccion Productos -->
+    </main>
+    <!-- Termina Main -->
+    <!-- Comienza Footer -->
+    <footer>
+      <div class="footer-copy">
+        &copy; 2024 Jota Store | Todos los derechos reservados.
+      </div>
+      <div class="footer-links">
+        <div class="redes">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://x.com/" target="_blank"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="https://www.instagram.com/accounts/login/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+        <div class="politicas">
+          <a href="./paginas/error404.html">Politicas de privacidad</a>
+          <a href="./paginas/error404.html">Administrar Cookies</a>
+          <a href="./paginas/error404.html">Info</a>
+          <a href="./paginas/error404.html">Ayuda</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Termina Footer -->
     <!-- Script de Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -3,3 +3,241 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Navbar */
+
+.navbar {
+  background-color: #7533f9;
+}
+
+.nav-link {
+  color: white;
+  border-radius: 5px;
+}
+
+.btn {
+  border-color: white;
+  color: white;
+  background-color: #7533f9;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #7533f9;
+}
+
+.dropdown-menu {
+  background-color: #7533f9;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+  color: #7533f9;
+}
+
+/* Carrousel */
+.carousel {
+  width: 100%;
+  height: 75vh;
+}
+
+.imagen-carousel {
+  width: 100%;
+  height: 75vh;
+}
+
+/* Productos */
+
+.titulo-productos {
+  padding-top: 20px;
+  color: white;
+}
+
+.contenedor-productos {
+  background-color: #7533f9;
+}
+
+.contenedor-grid {
+  padding-top: 20px;
+}
+
+.contenedor-card {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  width: 300px;
+}
+
+.card img {
+  height: 250px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #7533f9;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copy {
+  padding: 10px 20px 10px 0;
+  text-align: end;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 10px;
+}
+
+.redes a {
+  margin: 12px 5px;
+  padding: 6px 6px;
+  border-radius: 5px;
+}
+
+.politicas a {
+  margin: 12px;
+  padding: 8px 4px;
+  border-radius: 5px;
+}
+
+/* Medias Querys */
+
+/* Navbar */
+@media (min-width: 992px) {
+  .nav-link:hover {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+
+  .btn:hover {
+    background-color: white;
+    color: #7533f9;
+  }
+
+  .dropdown-item:hover {
+    background-color: white;
+    color: #7533f9;
+  }
+
+  .politicas a:hover {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+
+  .redes a:hover {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-link:active {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+
+  .btn:active {
+    background-color: white;
+    color: #7533f9;
+  }
+
+  .dropdown-item:active {
+    background-color: white;
+    color: #7533f9;
+  }
+
+  .politicas a:active {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+
+  .redes a:active {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+}
+
+/* Carousel */
+
+@media (max-width: 669px) and (min-width: 550px) {
+  .carousel {
+    height: 55vh;
+  }
+
+  .imagen-carousel {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 670px) {
+  .carousel {
+    height: 65vh;
+  }
+
+  .imagen-carousel {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 549px) {
+  .carousel {
+    display: none;
+  }
+}
+
+/* Productos */
+
+@media (max-width: 767px) {
+  .titulo-productos {
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+@media (max-width: 685px) {
+  .footer-copy {
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redes {
+    margin: 10px 0 20px 0;
+  }
+
+  .politicas {
+    margin: 10px 0 5x 0;
+    text-align: center;
+  }
+}
