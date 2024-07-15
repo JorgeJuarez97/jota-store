@@ -85,6 +85,41 @@
   height: 250px;
 }
 
+/* Footer */
+
+footer {
+  background-color: #7533f9;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copy {
+  padding: 10px 20px 10px 0;
+  text-align: end;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 10px;
+}
+
+.redes a {
+  margin: 12px 5px;
+  padding: 6px 6px;
+  border-radius: 5px;
+}
+
+.politicas a {
+  margin: 12px;
+  padding: 8px 4px;
+  border-radius: 5px;
+}
+
 /* Medias Querys */
 
 /* Navbar */
@@ -104,6 +139,18 @@
     background-color: white;
     color: #7533f9;
   }
+
+  .politicas a:hover {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+
+  .redes a:hover {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
 }
 
 @media (max-width: 991px) {
@@ -121,6 +168,18 @@
   .dropdown-item:active {
     background-color: white;
     color: #7533f9;
+  }
+
+  .politicas a:active {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+
+  .redes a:active {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
   }
 }
 
@@ -156,6 +215,29 @@
 
 @media (max-width: 767px) {
   .titulo-productos {
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+@media (max-width: 685px) {
+  .footer-copy {
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redes {
+    margin: 10px 0 20px 0;
+  }
+
+  .politicas {
+    margin: 10px 0 5x 0;
     text-align: center;
   }
 }
