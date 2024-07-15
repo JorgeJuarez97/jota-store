@@ -18,6 +18,7 @@
 .btn {
   border-color: white;
   color: white;
+  background-color: #7533f9;
 }
 
 .btn:hover {
@@ -40,13 +41,48 @@
 
 /* Carrousel */
 .carousel {
-  width: 100vw;
+  width: 100%;
   height: 75vh;
 }
 
 .imagen-carousel {
-  width: 100vw;
+  width: 100%;
   height: 75vh;
+}
+
+/* Productos */
+
+.titulo-productos {
+  padding-top: 20px;
+  color: white;
+}
+
+.contenedor-productos {
+  background-color: #7533f9;
+}
+
+.contenedor-grid {
+  padding-top: 20px;
+}
+
+.contenedor-card {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  width: 300px;
+}
+
+.card img {
+  height: 250px;
 }
 
 /* Medias Querys */
@@ -113,5 +149,13 @@
 @media (max-width: 549px) {
   .carousel {
     display: none;
+  }
+}
+
+/* Productos */
+
+@media (max-width: 767px) {
+  .titulo-productos {
+    text-align: center;
   }
 }
