@@ -11,7 +11,6 @@ body {
   display: flex;
   border: 3px solid white;
   border-radius: 10px;
-  background-color: #7533f9;
   color: white;
   margin-bottom: 20px;
 }
@@ -93,6 +92,47 @@ body {
   background-color: white;
 }
 
+.contenedor-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 60%;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contenedor-total p {
+  margin-bottom: 0;
+}
+
+.contenedor-total-hijo {
+  width: 20%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.contenedor-compra {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.botones-compra {
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid white;
+  padding: 0 8px;
+  background-color: #7533f9;
+  color: white;
+}
+
 /* Footer */
 
 footer {
@@ -117,6 +157,12 @@ footer {
   .boton-eliminar:hover {
     background-color: red;
     color: white;
+    transition: all 0.2s;
+  }
+
+  .botones-compra:hover {
+    background-color: white;
+    color: #7533f9;
     transition: all 0.2s;
   }
 }
@@ -146,7 +192,8 @@ footer {
 
   .boton-agregar-producto,
   .boton-editar,
-  .boton-eliminar {
+  .boton-eliminar,
+  .botones-compra {
     font-size: 0.75rem;
   }
 
@@ -157,6 +204,29 @@ footer {
   .contenedor-casilla-producto,
   .contenedor-agregar-producto {
     max-width: 90vw;
+  }
+
+  .botones-compra:active {
+    background-color: white;
+    color: #7533f9;
+    transition: all 0.2s;
+  }
+}
+
+@media (max-width: 831px) {
+  .contenedor-total {
+    max-width: 60%;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .contenedor-total-hijo,
+  .contenedor-compra {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -208,5 +278,14 @@ footer {
   .contenedor-precio,
   .contenedor-cantidad-texto {
     width: 25%;
+  }
+
+  .contenedor-total-hijo,
+  .contenedor-compra {
+    flex-wrap: wrap;
+  }
+
+  .botones-compra {
+    height: 40px;
   }
 }
